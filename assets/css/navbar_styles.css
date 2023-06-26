@@ -1,0 +1,119 @@
+/* General resets */
+#header a {
+  text-decoration: none;
+}
+
+#header ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+#header {
+  align-items: center;
+  background: #111;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 7%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar */
+#header .navbar ul {
+  list-style: none;
+}
+
+#header .navbar ul li {
+  float: left;
+  position: relative;
+}
+
+#header .navbar ul li a {
+  color: #f5f5f6;
+  display: block;
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#header .navbar ul li a:hover {
+  background: #777;
+  color: #333;
+}
+
+#header .navbar ul li ul {
+  position: absolute;
+  width: 200px;
+  background-color: #111;
+  color: #f5f5f6;
+  display: none;
+  top: 48px;
+  left: 0;
+}
+
+#header .navbar ul li ul li {
+  width: 100%;
+}
+
+#header .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+
+#header .navbar ul li:focus-within > ul,
+#header .navbar ul li:hover > ul {
+  display: initial;
+}
+
+#nav_toggle {
+  display: none;
+}
+
+#header label {
+  font-size: 1.3rem;
+  color: #f5f5f6;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #header {
+    padding: 5px;
+  }
+  #header label {
+    display: initial;
+  }
+  #header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #222;
+    display: none;
+  }
+  #header .navbar ul li {
+    width: 100%;
+  }
+  #header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+  #header .navbar ul li ul li {
+    background: #333;
+  }
+  #header .navbar ul li ul li ul {
+    left: 50px;
+    width: 100%;
+  }
+  #nav_toggle:checked ~ .navbar {
+    display: initial;
+  }
+}

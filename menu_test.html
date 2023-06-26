@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="updated_style.css" type="text/css" />
+
+    <title>Nested Drop-down Menu</title>
+  </head>
+
+  <body>
+    <nav class="JG-navbar">
+      <!-- LOGO -->
+      <div class="JG-logo">2<sup><small>nd</small></sup> Russell Scouting</div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="JG-nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="JG-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="#" title="Photo gallery from past years' activities."
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="#">Sections</a>
+            <!-- DROPDOWN MENU -->
+            <div class="JG-dropdown-1">
+              <ul>
+                <li>
+                  <a href="beavers.html" title="Beaver Scouts (Ages 5-7)"
+                    >Beaver Scouts</a
+                  >
+                </li>
+                <li>
+                  <a href="cubs.html" title="Cub Scouts (Ages 8-10">Cub Scouts</a>
+                </li>
+                <li>
+                  <a href="troop.html" title="Scouts (Ages 11-13)">Scouts</a>
+                </li>
+                <li>
+                  <a href="company.html" title="Venture Scouts (Ages 14-17)"
+                    >Venture Scouts</a
+                  >
+                </li>
+                <li>
+                  <a href="crew.html" title="Rover Scouts (Ages 18-26)"
+                    >Rover Scouts</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Parent Resources</a>
+            <!-- DROPDOWN MENU -->
+            <div class="JG-dropdown-1">
+              <ul>
+                <li class="hover-me">
+                  <a href="#">Sub-Dropdown Insignia Placement</a>
+                  <div class="JG-dropdown-2">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hover-me">
+                  <a href="#">Sub-Dropdown Program Details</a>
+                  <div class="JG-dropdown-2">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hover-me">
+                  <a href="#">Sub-Dropdown Other</a>
+                  <div class="JG-dropdown-2">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Scouter Resources</a>
+            <!-- DROPDOWN MENU -->
+            <div class="JG-dropdown-1">
+              <ul>
+                <li class="hover-me">
+                  <a href="#">Sub-menu Colony Scouters</a>
+                  <div class="JG-sub-menu-2">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hover-me">
+                  <a href="#">Sub-menu Pack Scouters</a>
+                  <div class="JG-sub-menu-2">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hover-me">
+                  <a href="#">Sub-menu Troop Scouters</a>
+                  <div class="JG-sub-menu-2">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hover-me">
+                  <a href="#">Sub-menu Company Advisors</a>
+                  <div class="JG-sub-menu-2">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="hover-me">
+                  <a href="#">Sub-menu Crew Advisors</a>
+                  <div class="JG-sub-menu-2">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Other Links</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="JG-dropdown-1">
+              <li>
+                <a
+                  href="https://www.scouts.ca/councils/eastern/voyageur/home.html"
+                  target="_blank"
+                  title="Area-Level Web Site"
+                  >Voyageur Council</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.scouts.ca/"
+                  target="_blank"
+                  title="Scouts Canada Main Webpage"
+                  >Scouts Canada</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scout.org/"
+                  target="_blank"
+                  title="Scouts Across the World"
+                  >World Organization of Scouts</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.scoutshop.ca/"
+                  target="_blank"
+                  title="For All Your Scouting Needs"
+                  >The Scout Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://scoutstracker.ca/sc/info/"
+                  target="_blank"
+                  title="Web-Based Badge &amp; Event Tracking"
+                  >ScoutTracker</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://www.thedump.scoutscan.com/"
+                  target="_blank"
+                  title="Archive of Scouting Reference Materia"
+                  >The Dump</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.russell.ca/"
+                  target="_blank"
+                  title="For keeping up to date with local going-ons."
+                  >Russell Township</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="Directory.html">Directory</a></li>
+          <li>
+            <a href="">About</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="JG-dropdown-1">
+              <li>
+                <a href="#" title="About 2nd Russell">About 2nd Russell</a>
+              </li>
+              <li>
+                <a href="#" title="group Awards, through the years"
+                  >Group Awards</a
+                >
+              </li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </body>
+</html>

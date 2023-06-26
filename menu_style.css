@@ -1,0 +1,139 @@
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.JG-navbar {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
+}
+
+/* LOGO */
+.JG-logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.JG-menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.JG-menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.JG-menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.JG-services {
+  position: relative;
+}
+
+.JG-dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.JG-dropdown li + li {
+  margin-top: 10px;
+}
+
+.JG-dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: left;
+}
+
+.JG-dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+.JG-services:hover .JG-dropdown {
+  display: block;
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+ .JG-menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: left;
+    padding: 16px 0;
+  }
+
+  .JG-menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+  }
+
+  .JG-menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .JG-dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .JG-dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
