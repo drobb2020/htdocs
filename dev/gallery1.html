@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test Gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body {
+        background: #ecf4fb;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .img-gallery {
+        width: 80%;
+        margin: 100px auto 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+      .img-gallery img {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .img-gallery img:hover {
+        transform: scale(1.1);
+        border-radius: 15px;
+        box-shadow: 0 32px 75px rgba(0, 0, 0, 0.3);
+      }
+      .full-img {
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+      .full-img img {
+        width: 90%;
+        max-width: 750px;
+        border-radius: 10px;
+      }
+      .full-img span {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Photo Gallery</h1>
+    <div class="full-img" id="fullimgbox">
+        <img src="./photogallery/2020-2021/biel-morro-_l8ZdgJ9m7w-unsplash.jpg" alt="" id="fullimg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery" id="gallery">
+        <img src="./photogallery/2019-2020/beavers/alexander-ant-kvMZ-xXFrA4-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2019-2020/cubs/ameen-fahmy-_gEKtyIbRSM-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2019-2020/scouts/angela-loria-ZAy8srF4rRM-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2019-2020/ventures/biel-morro-_l8ZdgJ9m7w-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2019-2020/voyagers/erikahg-BDeY3szgwdk.jpg" alt="" onclick="openFullImg(this.src)">
+
+        <img src="./photogallery/2020-2021/beavers/eutah-mizushima-OWwK_0_EnxY-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2020-2021/cubs/fikry-anshor-_uTVIR9w1NM.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2020-2021/scouts/daniel-olah-bDezzSDnRuA.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2020-2021/ventures/jeremy-bishop-dR_q93lfaTw-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2020-2021/voyagers/james-wheeler-ZOA-cqKuJAA-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+
+        <img src="./photogallery/2021-2022/beavers/aaron-burden-cEukkv42O40-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2021-2022/cubs/adi-goldstein-Hli3R6LKibo-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2021-2022/scouts/aditya-saxena-_mIXHvl_wzA-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2021-2022/ventures/alessandra-onisor-uH9gcWRCN6s-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2021-2022/voyagers/birminghammuseumstrust--IAS_N85adA.jpg" alt="" onclick="openFullImg(this.src)">
+
+        <img src="./photogallery/2022-2023/beavers/dave-a3e7yEtQxJs-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2022-2023/cubs/jerry-zhang-ePpaQC2c1xA-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2022-2023/scouts/lee-robinson-Yc9h5SJdEzI-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2022-2023/ventures/lisa-gageler-2l6vrN3fzho-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="./photogallery/2022-2023/voyagers/michal-matlon-4ApmfdVo32Q-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+    </div>
+    <!-- <script src="./assets/js/testGallery.js"></script> -->
+    <script>
+        const fullImgBox = document.getElementById('fullimgbox')
+        const fullImg = document.getElementById('fullimg')
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = 'flex'
+            fullImg.src = pic
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = 'none'
+        }
+    </script>
+  </body>
+</html>

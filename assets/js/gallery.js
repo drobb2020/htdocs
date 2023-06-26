@@ -1,5 +1,5 @@
 // Specify the directory path where your photos are located
-const photoDirectory = 'path/to/photos'
+const photoDirectory = '../../photogallery/2020-2021/'
 
 // Get a reference to the gallery container element
 const galleryContainer = document.getElementById('gallery')
