@@ -18,7 +18,7 @@ function includeHTML() {
             elmnt.innerHTML = 'Page not found.'
           }
           /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute('2rd-include-html')
+          elmnt.removeAttribute('2rs-include-html')
           includeHTML()
         }
       }
