@@ -19,6 +19,22 @@ h1 {
   margin: 0 auto;
 }
 
+.menu-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+}
+
+.menu-bar img {
+  width: 75px;
+}
+
 #photoGallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
